@@ -4,7 +4,7 @@ A vue plugin, which can detect device
 
 ## installation
 ```bash
-npm i @iampapaisarkar/imps-platform-detect
+npm i imps-platform-detect
 ```
 ## Usage
 
