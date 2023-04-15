@@ -2,11 +2,23 @@ function detectPlatform() {
     const userAgent = navigator.userAgent;
   
     if (/mobile/i.test(userAgent)) {
-      return "mobile";
+      return {
+        isMobile: true,
+        isWeb: false,
+        isTablet: false
+      };
     } else if (/tablet/i.test(userAgent)) {
-      return "tablet";
+        return {
+            isMobile: false,
+            isWeb: false,
+            isTablet: true
+          };
     } else {
-      return "web";
+        return {
+            isMobile: false,
+            isWeb: true,
+            isTablet: false
+          };
     }
   }
   

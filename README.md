@@ -7,17 +7,29 @@ You can easily detect a device by using this plugin. This plugin is really light
 [![N|Solid](https://www.iampapaisarkar.in/hire-me.svg)](https://www.upwork.com/freelancers/~01b68508e481c72291)
 
 ## installation
+### Vue2
 ```sh
-npm i imps-platform-detect
+npm i imps-platform-detect --tag=v2
+```
+### Vue3
+```sh
+npm i imps-platform-detect --tag=v3
 ```
 ## Usage
 
 ```vue
-
+#Vue 2 
 // import and use in your main.js file
 
+import Vue from 'vue'
+import App from './App.vue'
 import ImpsPlatform from 'imps-platform-detect';
+
 Vue.use(ImpsPlatform);
+
+new Vue({
+  render: h => h(App),
+}).$mount('#app')
 
 ```
 
@@ -26,7 +38,9 @@ Vue.use(ImpsPlatform);
 
 <template>
     <div>
-        {{$platform}}
+        <div v-if="$platform.isMobile">Platform is Mobile</div>
+        <div v-if="$platform.isWeb">Platform is Web</div>
+        <div v-if="$platform.isTablet">Platform is Tablet</div>
     </div>
 </template>
 
@@ -36,20 +50,43 @@ Vue.use(ImpsPlatform);
 // use on vue script 
 <script>
     export default {
-        data(){},
-        methods:{
-        checkDevices: function(){
-            if(this.$platform == 'web'){
-            console.log('Platform is web');
-            }else if(this.$platform == 'mobile'){
-            console.log('Platform is mobile');
-            }else if(this.$platform == 'tablet'){
-            console.log('Platform is tablet');
-            }
-        }
+        mounted(){
+            console.log(`Platform is ${this.$platform.isMobile}`);
+            console.log(`Platform is ${this.$platform.isWeb}`);
+            console.log(`Platform is ${this.$platform.isTablet}`);
         }
     }
 </script>
+
+```
+
+```vue
+#Vue 3
+// import and use in your main.js file
+
+import { createApp } from 'vue';
+import App from './App.vue';
+import ImpsPlatform from 'imps-platform-detect';
+
+const app = createApp(App);
+
+// Install the plugin globally
+app.use(ImpsPlatform);
+
+app.mount('#app');
+
+```
+
+```vue
+// use on vue components 
+
+<template>
+    <div>
+        <div v-if="$platform.isMobile">Platform is Mobile</div>
+        <div v-if="$platform.isWeb">Platform is Web</div>
+        <div v-if="$platform.isTablet">Platform is Tablet</div>
+    </div>
+</template>
 
 ```
 

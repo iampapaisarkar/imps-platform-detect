@@ -1,7 +1,7 @@
 {
   "name": "imps-platform-detect",
-  "version": "1.0.7",
-  "description": "A vue js plugin, which can detect device",
+  "version": "1.0.8",
+  "description": "A vue js plugin, which can detect device for vue2 and vue3",
   "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
