@@ -1,8 +1,8 @@
-# Foobar
+# Imps Platform Detect
 
 A vue plugin, which can detect device
 
-#installation
+## installation
 ```bash
 npm i @iampapaisarkar/imps-platform-detect
 ```
