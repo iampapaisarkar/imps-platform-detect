@@ -44,7 +44,6 @@ function detectPlatform() {
         if (newPlatform !== currentPlatform) {
           currentPlatform = newPlatform;
           Vue.prototype.$platform = currentPlatform;
-          Vue.prototype.$emit("platformChanged", currentPlatform);
         }
       });
   
@@ -54,7 +53,6 @@ function detectPlatform() {
         if (newPlatform !== currentPlatform) {
           currentPlatform = newPlatform;
           Vue.prototype.$platform = currentPlatform;
-          Vue.prototype.$emit("platformChanged", currentPlatform);
         }
       });
     }

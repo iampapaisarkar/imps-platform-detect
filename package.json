@@ -1,20 +1,18 @@
 {
   "name": "@iampapaisarkar/imps-platform-detect",
-  "version": "1.0.0",
-  "description": "A vue js plugin, which can detect realtime device",
+  "version": "1.0.1",
+  "description": "A vue js plugin, which can detect device",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
     "vue",
-    "detect",
-    "platform",
-    "vue",
-    "platform",
-    "plat",
-    "form",
-    "detect"
+    "detect mobile",
+    "detect desktop",
+    "detect browser",
+    "platform detect",
+    "detect device"
   ],
   "author": "iampapaisarkar",
   "license": "MIT",
