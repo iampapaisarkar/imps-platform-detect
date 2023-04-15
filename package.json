@@ -1,11 +1,11 @@
 {
   "name": "imps-platform-detect",
-  "version": "1.0.5",
+  "version": "1.0.7",
   "description": "A vue js plugin, which can detect device",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "compile": "node package.js"
+    "postinstall": "node compile.js"
   },
   "keywords": [
     "vue",
@@ -25,9 +25,5 @@
     "url": "https://github.com/iampapaisarkar/imps-platform-detect/issues"
   },
   "homepage": "https://github.com/iampapaisarkar/imps-platform-detect#readme",
-  "devDependencies": {
-    "@babel/cli": "^7.21.0",
-    "@babel/core": "^7.21.4",
-    "@babel/preset-env": "^7.21.4"
-  }
+  "devDependencies": {}
 }
