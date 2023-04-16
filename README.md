@@ -6,6 +6,9 @@ You can easily detect a device by using this plugin. This plugin is really light
 
 [![N|Solid](https://www.iampapaisarkar.in/hire-me.svg)](https://www.upwork.com/freelancers/~01b68508e481c72291)
 
+## Documentation
+see documentation [here](https://www.iampapaisarkar.in/npm-packages.html#platform-detect)
+
 ## installation
 ### Vue2
 ```sh
